@@ -77,7 +77,8 @@ This chart shows us a comparison between actual and pridected data in `RandomFor
 <img width="900" height="700" src="compression_actual_predict_data.png">
 
 
-Finally, I used RandomizedSearchCV to get the best parameters and I preferred it on grid search. It is similar to grid search, and yet it has proven to yield better results comparatively. I used it on the `RandomForestRegressor` for one feature importance column to get best parameters because I did not get a good accuracy as I got it before with the features importance. 
+Finally, I used RandomizedSearchCV to get the best parameters and I preferred it on grid search. It is similar to grid search, and yet it has proven to yield better results comparatively. I used it on the `RandomForestRegressor` for one feature importance column to get best parameters because I did not get a good accuracy as I got it before with the features importance.
+
 Note: I only extracted the most important parameters, and Colab with GPU did not help me to apply it.
 
 
