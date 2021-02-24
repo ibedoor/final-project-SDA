@@ -1,4 +1,5 @@
-# Impact of Covid-19 Pandemic on the Global Economy Machine Learning using LinearRgression, DecisionTreeRegression , XGBoostRegression, and RandomForestRegression
+# Impact of Covid-19 Pandemic on the Global Economy Machine Learning
+<li><a href="#Introduction">Introduction</a></li>
 <li><a href="#Data">Dataset Link</a></li>
 <li><a href="#Installation">Installation</a></li>
 <li><a href="#Business Problem">Business Problem</a></li>
@@ -8,12 +9,16 @@
 <li><a href="#Author">Author</a></li>
 
 
+<a id='Introduction'></a>
+## Introduction:
+The global pandemic has disrupted business activities worldwide. But COVID-19’s economic impact has varied across regions, and the consequences have been largely dependent on a regions are economic position. I will use Machine learning models such as  `LinearRgression`, `DecisionTreeRegression`, `XGBoostRegression`, and `RandomForestRegression` to predict impact Covid-19 on Gross Domestic Product (GDP) per capita.
+
 <a id='Data'></a>
-# Dataset Link:
+## Dataset Link:
 The dataset is [here](https://www.kaggle.com/shashwatwork/impact-of-covid19-pandemic-on-the-global-economy)
 
 <a id='Installation'></a>
-# Installation:
+## Installation:
 Python versions 3.*.
 
 Libraries:
@@ -24,8 +29,8 @@ Libraries:
 - [Matplotlib](https://matplotlib.org/stable/index.html)
 
 <a id='Business Problem'></a>
-# Business Problem:
-In this project, I will use Machine learning models such as  `LinearRgression`, `DecisionTreeRegression`, `XGBoostRegression`, and `RandomForestRegression` to predict the impact of Covid-19 on the global economy especially on GDP per capita on the global economy and the impact of unexpected pandemics on GDP and the extent of their impact on citizens. GDP is one of the most important economic indicators; it shows the short-term development of an economy.
+## Business Problem:
+Predicting the impact of Covid-19 on the global economy especially on GDP per capita on the global economy and the impact of unexpected pandemics on GDP and the extent of their impact on citizens. GDP is one of the most important economic indicators; it shows the short-term development of an economy.
 
 <a id='EDA'></a>
 # Exploratory Data Analysis:
