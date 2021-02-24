@@ -41,16 +41,16 @@ Predicting the impact of Covid-19 on the global economy especially on GDP per ca
 - Gross Domestic Product changing rapidly, in end of 2019 Norway has the highest Gross Domestic Product and in October of 2020 changed to become Brunei the highest.
 
 **Chart 1:**
+
 <img width="900" height="600" src="covid19_cases.png">
 
 **Chart 2:**
+
 <img width="900" height="700" src="following_rules.png">
 
 **Chart 3:**
-<img width="900" height="600" src="chance_surviving.png">
 
-**Chart 4:**
-<img width="900" height="700" src="gdp.png">
+<img width="900" height="600" src="chance_surviving.png">
 
 
 
@@ -66,25 +66,32 @@ Correlation heatmap to extract relationships between columns
 - Distribution of Population in each country
 - Distribution of Gross Domestic Product (GDP) for countries
 
-After that I extract the five features importance from correlation heatmap and they were `HDI`, `TC`, `TD`, `STI`, `POP`. Then I applied with first model and it was `LinearRgression` I get accuracy **31.49%** and mean squared error was **6.97** the outcomes it is so bad so I tried with another model to get good results. The second model was `DecisionTreeRegression` the accuracy is **99.89%** and mean squared error was **0.01** it is a great result. Third model is `XGBoostRegression` the accuracy **95.10%** and mean squared error was **0.50** better than LinearRgression and worse than `DecisionTreeRegression`. Last model it was `RandomForestRegressor` and the accuracy in this model was **99.97%** as for the mean squared error it was **0.00** the best results. Based on the results I obtained, I can say the `RandomForestRegressor` the best model for the data it has the highest accuracy **99.97%** and lowest mean squared error **0.00**. 
+Then I applied some models which corresponds to the data I have. I used `LinearRgression` , `DecisionTreeRegression` , `XGBoostRegression` , and `RandomForestRegressor` 
 
-Then, I have compared all models with `Baseline` model and I found the accuracy was the worst **11%**, it is not a good result.
-Furthermore, I visualize chart automatically displays the features importance associated with the target column GDPCAP. Then, I try again in RandomForestRegressor with the most important column in features importance I got it from the plot and it was `HDI`. `HDI` and `GDP` columns have a strong relationship, each one influencing the other that means when `HDI` increases, the `GDP` will also increase, and vice versa.
+Here, I’ll create the x and y variables by taking them from the dataset and splitting it manually into training and test sets.
 
+Fit the model
+I am going to use x_train and y_train obtained above to train my regression model. I am using the fit method and passing the parameters as shown below.
 
-This chart shows us Features importance in `RandomForestRegression` model
+Note that the output of this cell is describing a number of parameters like copy_X, fit_intercept, etc. for the model. The parameters will change depending on the model chosen.
+
+Predict using the trained model
+Once the model is trained, it’s ready to make predictions. We can use the predict method on the model and pass x_test as a parameter to get the output as y_pred.
+
+I need to check to see how well my model is performing on the test data. For this, I evaluate my model by finding the mean squared error produced by the model. 
+Mean squared error is a built in function, and we are using NumPy’s mean squared error function (mean_ squared_error) 
+Furthermore, I visualize chart automatically displays the feature importance associated with the target column GDPCAP for the models. In `DecisionTreeRegression` and `RandomForestRegressor` the feature importance was DATE by 0.24, STI by 0.45, COUNTRY_Switzerland by 0.4, COUNTRY_Saint Lucia by 0.37, COUNTRY_Sierra Leone by 0.34. in `LinearRgression` does not support feature importance. `XGBoostRegression` has different feature importance it was `DATE`, `STI`, `COUNTRY_Switzerland`, `COUNTRY_Saint Lucia`, `TC`
+This chart shows us Feature importance in `RandomForestRegression` and `DecisionTreeRegression` models
 <img width="900" height="700" src="features_importance.png">
 
+After that, I compared between actual and predicted data for each models, I found that `DecisionTreeRegression` made the best predictions reasonably close to actual data, while `LinearRgression` made the worst predictions it is working outside the scope of `LinearRgression`.
 
-When I used just one feature importance I obtained an accuracy **65.36%** and mean squared error was **3.61**, it is not a good result, so five features importance is better than one feature importance. After that, I compared between actual and predicted data for each models, I found that `RandomForestRegressor` made the best predictions reasonably close to actual data, while `LinearRgression` made the worst predictions it is working outside the scope of `LinearRgression`.
-
-This chart shows us a comparison between actual and pridected data in `RandomForestRegression` model
+This chart shows us a comparison between actual and predicted data in `DecisionTreeRegression` model
 <img width="900" height="700" src="compression_actual_predict_data.png">
 
 
-Finally, I used RandomizedSearchCV to get the best parameters and I preferred it on grid search. It is similar to grid search, and yet it has proven to yield better results comparatively. I used it on the `RandomForestRegressor` for one feature importance column to get best parameters because I did not get a good accuracy as I got it before with the features importance.
-
-Note: I only extracted the most important parameters, and Colab with GPU did not help me to apply it.
+Finally, I found that mean squared error in LinearRgression was 0.00, in DecisionTreeRegression was 0.00, in XGBoostRegression was 0.4, and in RandomForestRegressor 0.04. As we can see, LinearRgression and DecisionTreeRegression they have no errors. The score in `LinearRgression`, `DecisionTreeRegression`, `XGBoostRegression`, and `RandomForestRegressor` recorded score with **99.98%**, **100%**, **95.54%**, and **99.66%**. As we see, DecisionTreeRegression model has the highest score.
+Then, I have compared all models with `Baseline` model and I found the score was the worst **11%**, it is not a good result.
 
 
 <a id='Resources'></a>
