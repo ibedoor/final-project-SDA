@@ -5,6 +5,7 @@
 <li><a href="#EDA">Exploratory Data Analysis</a></li>
 <li><a href="#Results">Results</a></li>
 <li><a href="#Resources">Resources</a></li>
+<li><a href="#Author">Author</a></li>
 
 
 <a id='Data'></a>
@@ -101,3 +102,9 @@ Note: I only extracted the most important parameters, and Colab with GPU did not
 * [Mapping column names to random forest feature importances](https://stackoverflow.com/questions/41900387/mapping-column-names-to-random-forest-feature-importances)
 * [The Mathematics of Decision Trees, Random Forest and Feature Importance in Scikit-learn and Spark](https://towardsdatascience.com/the-mathematics-of-decision-trees-random-forest-and-feature-importance-in-scikit-learn-and-spark-f2861df67e3)
 * [How to find optimal parameters using RandomizedSearchCV for Regression?](https://www.dezyre.com/recipes/find-optimal-parameters-using-randomizedsearchcv-for-regression)
+
+
+<a id='Author'></a>
+# Author:
+Bedoor Alharbi
+
