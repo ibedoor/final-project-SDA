@@ -79,7 +79,7 @@ I am going to use x_train and y_train obtained above to train my regression mode
 Note that the output of this cell is describing a number of parameters like copy_X, fit_intercept, etc. for the model. The parameters will change depending on the model chosen.
 
 Predict using the trained model
-Once the model is trained, it’s ready to make predictions. We can use the predict method on the model and pass x_test as a parameter to get the output as y_pred.
+Once the model is trained, it’s ready to make predictions. We can use the predict method on the model and pass x_test as a parameter to get the output as lr_preds.
 
 <img width="500" height="200" src="preds.png">
 
