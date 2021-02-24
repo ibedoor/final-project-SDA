@@ -35,16 +35,16 @@ In this project, I will use Machine learning models such as  `LinearRgression`, 
 - Gross Domestic Product changing rapidly, in end of 2019 Norway has the highest Gross Domestic Product and in October of 2020 changed to become Brunei the highest.
 
 **Chart 1:**
-<img width="700" height="600" src="covid19_cases.png">
+<img width="900" height="600" src="covid19_cases.png">
 
 **Chart 2:**
-<img width="700" height="700" src="plot2.jpg">
+<img width="900" height="700" src="following_rules.png">
 
 **Chart 3:**
-<img width="700" height="600" src="plot1.jpg">
+<img width="900" height="600" src="chance_surviving.png">
 
 **Chart 4:**
-<img width="700" height="700" src="plot2.jpg">
+<img width="900" height="700" src="gdp.png">
 
 
 
@@ -67,16 +67,17 @@ Furthermore, I visualize chart automatically displays the features importance as
 
 
 This chart shows us Features importance in `RandomForestRegression` model
-<img width="700" height="700" src="plot3.jpg">
+<img width="900" height="700" src="features_importance.png">
 
 
 When I used just one feature importance I obtained an accuracy **65.36%** and mean squared error was **3.61**, it is not a good result, so five features importance is better than one feature importance. After that, I compared between actual and predicted data for each models, I found that `RandomForestRegressor` made the best predictions reasonably close to actual data, while `LinearRgression` made the worst predictions it is working outside the scope of `LinearRgression`.
 
 This chart shows us a comparison between actual and pridected data in `RandomForestRegression` model
-<img width="700" height="700" src="plot3.jpg">
+<img width="900" height="700" src="compression_actual_predict_data.png">
 
 
-Finally, I used RandomizedSearchCV to get the best parameters and I preferred it on grid search. It is similar to grid search, and yet it has proven to yield better results comparatively. I used it on the `RandomForestRegressor` for one feature importance column to get best parameters because I did not get a good accuracy as I got it before with the features importance. I only extracted the most important parameters, and Colab with GPU did not help me to apply it.
+Finally, I used RandomizedSearchCV to get the best parameters and I preferred it on grid search. It is similar to grid search, and yet it has proven to yield better results comparatively. I used it on the `RandomForestRegressor` for one feature importance column to get best parameters because I did not get a good accuracy as I got it before with the features importance. 
+Note: I only extracted the most important parameters, and Colab with GPU did not help me to apply it.
 
 
 <a id='Resources'></a>
