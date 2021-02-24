@@ -73,16 +73,19 @@ Here, I’ll create the x and y variables by taking them from the dataset and sp
 
 Fit the model
 I am going to use x_train and y_train obtained above to train my regression model. I am using the fit method and passing the parameters as shown below.
+
 <img width="500" height="200" src="fit_model.png">
 
 Note that the output of this cell is describing a number of parameters like copy_X, fit_intercept, etc. for the model. The parameters will change depending on the model chosen.
 
 Predict using the trained model
 Once the model is trained, it’s ready to make predictions. We can use the predict method on the model and pass x_test as a parameter to get the output as y_pred.
+
 <img width="500" height="200" src="preds.png">
 
 I need to check to see how well my model is performing on the test data. For this, I evaluate my model by finding the mean squared error produced by the model. 
 Mean squared error is a built in function, and we are using NumPy’s mean squared error function (mean_squared_error)
+
 <img width="500" height="200" src="mean_squared_error.png">
 
 
