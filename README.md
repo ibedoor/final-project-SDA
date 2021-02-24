@@ -5,6 +5,7 @@
 <li><a href="#Business Problem">Business Problem</a></li>
 <li><a href="#EDA">Exploratory Data Analysis</a></li>
 <li><a href="#Results">Results</a></li>
+<li><a href="https://github.com/ibedoor/final-project-SDA/blob/main/impact-covid19-on-economy-pager.pdf">Pager</a></li>
 <li><a href="#Resources">Resources</a></li>
 <li><a href="#Author">Author</a></li>
 
