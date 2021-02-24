@@ -68,21 +68,22 @@ Correlation heatmap to extract relationships between columns
 Then I applied some models which corresponds to the data I have. I used `LinearRgression` , `DecisionTreeRegression` , `XGBoostRegression` , and `RandomForestRegressor` 
 
 Here, I’ll create the x and y variables by taking them from the dataset and splitting it manually into training and test sets.
-<img width="300" height="150" src="split_data.jpg">
+
+<img width="500" height="200" src="split_data.jpg">
 
 Fit the model
 I am going to use x_train and y_train obtained above to train my regression model. I am using the fit method and passing the parameters as shown below.
-<img width="300" height="150" src="fit_model.png">
+<img width="500" height="200" src="fit_model.png">
 
 Note that the output of this cell is describing a number of parameters like copy_X, fit_intercept, etc. for the model. The parameters will change depending on the model chosen.
 
 Predict using the trained model
 Once the model is trained, it’s ready to make predictions. We can use the predict method on the model and pass x_test as a parameter to get the output as y_pred.
-<img width="300" height="150" src="preds.png">
+<img width="500" height="200" src="preds.png">
 
 I need to check to see how well my model is performing on the test data. For this, I evaluate my model by finding the mean squared error produced by the model. 
 Mean squared error is a built in function, and we are using NumPy’s mean squared error function (mean_squared_error)
-<img width="300" height="150" src="mean_squared_error.png">
+<img width="500" height="200" src="mean_squared_error.png">
 
 
 Furthermore, I visualize chart automatically displays the feature importance associated with the target column **GDPCAP** for the models. In `DecisionTreeRegression` and `RandomForestRegressor` the feature importance was DATE by 0.24, STI by 0.45, COUNTRY_Switzerland by 0.4, COUNTRY_Saint Lucia by 0.37, COUNTRY_Sierra Leone by 0.34. in `LinearRgression` does not support feature importance. `XGBoostRegression` has different feature importance it was `DATE`, `STI`, `COUNTRY_Switzerland`, `COUNTRY_Saint Lucia`, `TC`
