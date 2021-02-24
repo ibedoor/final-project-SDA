@@ -38,19 +38,18 @@ Predicting the impact of Covid-19 on the global economy especially on GDP per ca
 - Total Cases and Deaths changing rapidly.
 - China most willing to following the rules of a pandemic.
 - Afghanistan has more chances of surviving a Covid-19 pandemic than other countries.
-- Gross Domestic Product changing rapidly, in end of 2019 Norway has the highest Gross Domestic Product and in October of 2020 changed to become Brunei the highest.
 
 **Chart 1:**
 
-<img width="900" height="600" src="covid19_cases.png">
+<img width="700" height="500" src="covid19_cases.png">
 
 **Chart 2:**
 
-<img width="900" height="700" src="following_rules.png">
+<img width="700" height="500" src="following_rules.png">
 
 **Chart 3:**
 
-<img width="900" height="600" src="chance_surviving.png">
+<img width="700" height="500" src="chance_surviving.png">
 
 
 
@@ -82,12 +81,12 @@ I need to check to see how well my model is performing on the test data. For thi
 Mean squared error is a built in function, and we are using NumPy’s mean squared error function (mean_ squared_error) 
 Furthermore, I visualize chart automatically displays the feature importance associated with the target column GDPCAP for the models. In `DecisionTreeRegression` and `RandomForestRegressor` the feature importance was DATE by 0.24, STI by 0.45, COUNTRY_Switzerland by 0.4, COUNTRY_Saint Lucia by 0.37, COUNTRY_Sierra Leone by 0.34. in `LinearRgression` does not support feature importance. `XGBoostRegression` has different feature importance it was `DATE`, `STI`, `COUNTRY_Switzerland`, `COUNTRY_Saint Lucia`, `TC`
 This chart shows us Feature importance in `RandomForestRegression` and `DecisionTreeRegression` models
-<img width="900" height="700" src="features_importance.png">
+<img width="700" height="500" src="features_importance.png">
 
 After that, I compared between actual and predicted data for each models, I found that `DecisionTreeRegression` made the best predictions reasonably close to actual data, while `LinearRgression` made the worst predictions it is working outside the scope of `LinearRgression`.
 
 This chart shows us a comparison between actual and predicted data in `DecisionTreeRegression` model
-<img width="900" height="700" src="compression_actual_predict_data.png">
+<img width="700" height="500" src="compression_actual_predict_data.png">
 
 
 Finally, I found that mean squared error in LinearRgression was 0.00, in DecisionTreeRegression was 0.00, in XGBoostRegression was 0.4, and in RandomForestRegressor 0.04. As we can see, LinearRgression and DecisionTreeRegression they have no errors. The score in `LinearRgression`, `DecisionTreeRegression`, `XGBoostRegression`, and `RandomForestRegressor` recorded score with **99.98%**, **100%**, **95.54%**, and **99.66%**. As we see, DecisionTreeRegression model has the highest score.
