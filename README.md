@@ -123,8 +123,6 @@ Then, I have compared all models with `Baseline` model and I found the score was
 * [Always start with a stupid model, no exceptions](https://blog.insightdatascience.com/always-start-with-a-stupid-model-no-exceptions-3a22314b9aaa)
 * [Mapping column names to random forest feature importances](https://stackoverflow.com/questions/41900387/mapping-column-names-to-random-forest-feature-importances)
 * [The Mathematics of Decision Trees, Random Forest and Feature Importance in Scikit-learn and Spark](https://towardsdatascience.com/the-mathematics-of-decision-trees-random-forest-and-feature-importance-in-scikit-learn-and-spark-f2861df67e3)
-* [How to find optimal parameters using RandomizedSearchCV for Regression?](https://www.dezyre.com/recipes/find-optimal-parameters-using-randomizedsearchcv-for-regression)
-
 
 <a id='Author'></a>
 # Author:
