@@ -32,7 +32,7 @@ Libraries:
 
 <a id='Business Problem'></a>
 ## Business Problem:
-Predicting Predicting the impact of Covid-19 on the global economy especially in Gross Domestic Product Per Capita on citizens. GDP is one of the most important economic indicators; it shows the short-term development of an economy.
+Predicting Predicting the impact of Covid-19 on the global economy especially in Gross Domestic Product Per Capita. GDP is one of the most important economic indicators; it shows the short-term development of an economy.
 
 <a id='EDA'></a>
 # Exploratory Data Analysis:
